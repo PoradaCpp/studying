@@ -14,7 +14,6 @@ public:
 
 private:
     const size_t MEM_CHUNK_SIZE;
-    const size_t DATA_SIZE;
     const size_t MEM_CHUNK_NUM;
     const size_t MAX_EXP_OF_TWO;
 

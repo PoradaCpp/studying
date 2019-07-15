@@ -16,8 +16,7 @@ public:
     bool full();
     bool empty();
 
-//private:
-    size_t m_nMemChunkSize;
+private:
     size_t m_nDataSize;
     size_t m_nNumOfData;
 

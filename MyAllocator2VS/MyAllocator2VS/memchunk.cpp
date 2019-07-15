@@ -8,7 +8,6 @@ void MemChunk::init(uint8_t *pBuffer, size_t nMemChunkSize, size_t nDataSize)
 	size_t nBitSetBufSize = nNumOfBits / 8 + (nNumOfBits % 8 ? 1 : 0);
     m_nDataSize = nDataSize;
     m_nNumOfData = (nMemChunkSize - nBitSetBufSize) / nDataSize;
-    m_nMemChunkSize = nMemChunkSize;
     m_pBuffer = pBuffer + nBitSetBufSize;
     m_BitSet.init(pBuffer, m_nNumOfData);
 }

@@ -7,7 +7,7 @@
 
 
 MyAllocator::MyAllocator(size_t nBufferSize, size_t nNumOfChunk): MEM_CHUNK_SIZE((nBufferSize - nNumOfChunk) / nNumOfChunk),
-    DATA_SIZE(nBufferSize), MEM_CHUNK_NUM(nNumOfChunk), MAX_EXP_OF_TWO(static_cast<size_t>(ceil(log2(MEM_CHUNK_SIZE)))),
+    MEM_CHUNK_NUM(nNumOfChunk), MAX_EXP_OF_TWO(static_cast<size_t>(ceil(log2(MEM_CHUNK_SIZE)))),
     m_pStartBuffer(new uint8_t[nBufferSize]), m_pEndBuffer(m_pStartBuffer + nBufferSize)
 {
     m_pChunks = m_pStartBuffer + MEM_CHUNK_NUM;
