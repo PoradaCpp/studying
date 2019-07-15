@@ -1,11 +1,11 @@
 #include "membitset.h"
 
-void MemBitSet::init(uint8_t *pBuffer, size_t nNumOfBit)
+void MemBitSet::init(uint8_t *pBuffer, size_t nNumOfBits)
 
 {
 	m_fFull = false;
-    m_nByteSize = nNumOfBit / 8 + ( nNumOfBit % 8 ? 1 : 0);
-    m_nNumOfData = nNumOfBit;
+    m_nByteSize = nNumOfBits / 8 + ( nNumOfBits % 8 ? 1 : 0);
+    m_nNumOfData = nNumOfBits;
     m_BitArr = pBuffer;
     memset(m_BitArr, 0, m_nByteSize);
 }

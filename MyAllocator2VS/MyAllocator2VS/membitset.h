@@ -9,7 +9,9 @@
 class MemBitSet
 {
 public:
-    void init(uint8_t *pBuffer, size_t nBitNumber);
+	friend class MemChunk;
+
+    void init(uint8_t *pBuffer, size_t nNumberOfBits);
 
     void setBit(size_t nPos);
     void resetBit(size_t nPos);

@@ -1,0 +1,7 @@
+﻿  main.cpp
+  membitset.cpp
+  memchunk.cpp
+  myallocator.cpp
+  Generating Code...
+C:\Users\Workstation\Documents\GitHub\studying\MyAllocator2VS\MyAllocator2VS\main.cpp(11,45): warning C4267:  'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  MyAllocator2VS.vcxproj -> C:\Users\Workstation\Documents\GitHub\studying\MyAllocator2VS\x64\Debug\MyAllocator2VS.exe

@@ -7,9 +7,9 @@ void MemChunk::init(uint8_t *pBuffer, size_t nMemChunkSize, size_t nDataSize)
 	size_t nNumOfBits = nMemChunkSize / nDataSize;
 	size_t nBitSetBufSize = nNumOfBits / 8 + (nNumOfBits % 8 ? 1 : 0);
     m_nDataSize = nDataSize;
-    m_nNumOfData = (nMemChunkSize - nBitSetBufSize) / nDataSize;
+	size_t nNumOfData = (nMemChunkSize - nBitSetBufSize) / nDataSize;
     m_pBuffer = pBuffer + nBitSetBufSize;
-    m_BitSet.init(pBuffer, m_nNumOfData);
+    m_BitSet.init(pBuffer, nNumOfData);
 }
 
 void* MemChunk::placeData()
@@ -25,7 +25,7 @@ void* MemChunk::placeData()
 
 void MemChunk::removeData(void* pData)
 {
-    if(pData >= m_pBuffer && pData < m_pBuffer + m_nNumOfData)
+    if(pData >= m_pBuffer && pData < m_pBuffer + m_BitSet.m_nNumOfData)
     {
         size_t nDataPos = static_cast<size_t>((reinterpret_cast<uint8_t*>(pData) - m_pBuffer)) / m_nDataSize;
         m_BitSet.resetBit(nDataPos);

@@ -18,8 +18,6 @@ public:
 
 private:
     size_t m_nDataSize;
-    size_t m_nNumOfData;
-
     MemBitSet m_BitSet;
     uint8_t* m_pBuffer;
 };
