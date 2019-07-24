@@ -9,17 +9,13 @@ class Any
 {
 public:
     Any();
-    //Any(const Any& other);
 
     ~Any();
-
-    //Any& operator = (const Any& rhs);
 
     template<typename T>
     Any& operator = (T&& rhs);
 
     void reset();
-    //void swap(Any& other);
     bool has_value() const;
     const std::type_info& type() const;
 
@@ -63,7 +59,13 @@ private:
 
 Any::Any(): m_pObject(nullptr) {}
 
-Any::~Any() {}
+Any::~Any()
+{
+    if(m_pObject)
+    {
+        delete m_pObject;
+    }
+}
 
 template<typename T>
 Any& Any::operator = (T&& object)
