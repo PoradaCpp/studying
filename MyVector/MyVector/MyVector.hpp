@@ -11,7 +11,7 @@ class MyVector
 {
 public:
 	MyVector();
-	explicit MyVector(std::size_t nSize);
+	MyVector(std::size_t nSize, const T& value);
 	MyVector(const MyVector &rVc);
 	MyVector(MyVector &&rVc);
 	~MyVector();
@@ -41,6 +41,8 @@ public:
 	void pop_back();
 
 private:
+	static const size_t DEFAULT_SIZE = 4;
+
 	std::size_t m_nSize = 0;
 	std::size_t m_nCapacity = 0;
 	T *m_pBuffer = nullptr;
@@ -50,15 +52,20 @@ template <typename T>
 MyVector<T>::MyVector() {}
 
 template <typename T>
-MyVector<T>::MyVector(size_t nSize) : m_nSize(nSize), m_nCapacity(nSize)
+MyVector<T>::MyVector(size_t nSize, const T& value) : m_nSize(nSize), m_nCapacity(nSize)
 {
-	m_pBuffer = new T[nSize];
+	m_pBuffer = reinterpret_cast<T*>(operator new(nSize * sizeof(T)));
+
+	for (size_t i = 0; i < nSize; ++i)
+	{
+		new(m_pBuffer[i]) T(value);
+	}
 }
 
 template <typename T>
 MyVector<T>::MyVector(const MyVector &rVc) : m_nSize(rVc.m_nSize), m_nCapacity(rVc.m_nCapacity)
 {
-	m_pBuffer = new T[m_nCapacity];
+	m_pBuffer = reinterpret_cast<T*>(operator new(m_nSize * sizeof(T)));
 
 	if (std::is_pod<T>::value)
 	{
@@ -68,7 +75,7 @@ MyVector<T>::MyVector(const MyVector &rVc) : m_nSize(rVc.m_nSize), m_nCapacity(r
 	{
 		for (int i = 0; i < m_nSize; ++i)
 		{
-			m_pBuffer[i] = rVc.m_pBuffer[i];
+			new(&m_pBuffer[i]) T(rVc.m_pBuffer[i]);
 		}
 	}
 }
@@ -87,7 +94,11 @@ MyVector<T>::~MyVector()
 {
 	if (m_pBuffer)
 	{
-		delete[] m_pBuffer;
+		for (int i = 0; i < m_nSize; ++i)
+		{
+			m_pBuffer[i].~T();
+		}
+		operator delete(m_pBuffer);
 	}
 }
 
@@ -139,12 +150,16 @@ void MyVector<T>::reserve(std::size_t nSize)
 {
 	if (m_nCapacity < nSize)
 	{
-		T* pTemp = new T[nSize];
+		T* pTemp = reinterpret_cast<T*>(operator new(nSize * sizeof(T)));
 		memcpy(pTemp, m_pBuffer, sizeof(T) * m_nSize);
 
 		if (m_pBuffer)
 		{
-			delete[] m_pBuffer;
+			for (int i = 0; i < m_nSize; ++i)
+			{
+				m_pBuffer[i].~T();
+			}
+			operator delete(m_pBuffer);
 		}
 		m_pBuffer = pTemp;
 		m_nCapacity = nSize;
@@ -153,20 +168,24 @@ void MyVector<T>::reserve(std::size_t nSize)
 
 template <typename T>
 template <typename Type,
-		  typename std::enable_if<!std::is_pod<Type>::value&& std::is_nothrow_move_constructible<Type>::value>::type* = nullptr>
+		  typename std::enable_if<!std::is_pod<Type>::value && std::is_nothrow_move_constructible<Type>::value>::type* = nullptr>
 void MyVector<T>::reserve(std::size_t nSize)
 {
 	if (m_nCapacity < nSize)
 	{
-		T* pTemp = new T[nSize];
+		T* pTemp = reinterpret_cast<T*>(operator new(nSize * sizeof(T)));
 
 		for (int i = 0; i < m_nSize; ++i)
 		{
-			pTemp[i] = std::move(m_pBuffer[i]);
+			new(&pTemp[i]) T(std::move(m_pBuffer[i]));
 		}
 		if (m_pBuffer)
 		{
-			delete[] m_pBuffer;
+			for (int i = 0; i < m_nSize; ++i)
+			{
+				m_pBuffer[i].~T();
+			}
+			operator delete(m_pBuffer);
 		}
 		m_pBuffer = pTemp;
 		m_nCapacity = nSize;
@@ -180,15 +199,19 @@ void MyVector<T>::reserve(std::size_t nSize)
 {
 	if (m_nCapacity < nSize)
 	{
-		T* pTemp = new T[nSize];
+		T* pTemp = reinterpret_cast<T*>(operator new(nSize * sizeof(T)));
 
 		for (int i = 0; i < m_nSize; ++i)
 		{
-			pTemp[i] = m_pBuffer[i];
+			new(&pTemp[i]) T(m_pBuffer[i]);
 		}
 		if (m_pBuffer)
 		{
-			delete[] m_pBuffer;
+			for (int i = 0; i < m_nSize; ++i)
+			{
+				m_pBuffer[i].~T();
+			}
+			operator delete(m_pBuffer);
 		}
 		m_pBuffer = pTemp;
 		m_nCapacity = nSize;
@@ -200,14 +223,14 @@ void MyVector<T>::push_back(const T& val)
 {
 	if (!m_pBuffer)
 	{
-		m_pBuffer = new T[4];
-		m_nCapacity = 4;
+		m_pBuffer = reinterpret_cast<T*>(operator new(DEFAULT_SIZE * sizeof(T)));
+		m_nCapacity = DEFAULT_SIZE;
 	}
 	else if (m_nSize == m_nCapacity)
 	{
 		reserve(m_nCapacity * 2);
 	}
-	m_pBuffer[m_nSize++] = val;
+	new(&m_pBuffer[m_nSize++]) T(val);
 }
 
 template <typename T>
@@ -215,14 +238,14 @@ void MyVector<T>::push_back(T &&val)
 {
 	if (!m_pBuffer)
 	{
-		m_pBuffer = new T[4];
-		m_nCapacity = 4;
+		m_pBuffer = reinterpret_cast<T*>(operator new(DEFAULT_SIZE * sizeof(T)));
+		m_nCapacity = DEFAULT_SIZE;
 	}
 	else if (m_nSize == m_nCapacity)
 	{
 		reserve(m_nCapacity * 2);
 	}
-	m_pBuffer[m_nSize++] = std::move(val);
+	new(&m_pBuffer[m_nSize++]) T(std::forward<T>(val));
 }
 
 template <typename T>
@@ -230,7 +253,7 @@ void MyVector<T>::pop_back()
 {
 	if (m_nSize)
 	{
-		--m_nSize;
+		m_pBuffer[--m_nSize].~T();
 	}
 }
 
