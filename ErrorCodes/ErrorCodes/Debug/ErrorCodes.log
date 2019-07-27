@@ -1,0 +1,4 @@
+﻿  ErrorCodes.cpp
+C:\Users\Workstation\Documents\CPP\ErrorCodes\ErrorCodes\ErrorCodes.cpp(83,54): warning C4244:  'initializing': conversion from 'LONGLONG' to 'unsigned int', possible loss of data
+C:\Users\Workstation\Documents\CPP\ErrorCodes\ErrorCodes\ErrorCodes.cpp(86,60): warning C4244:  'argument': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+  ErrorCodes.vcxproj -> C:\Users\Workstation\Documents\CPP\ErrorCodes\Debug\ErrorCodes.exe
