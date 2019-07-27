@@ -1,6 +1,7 @@
 #pragma once
 
 #include <functional>
+#include <iostream>
 
 class ScopedCaller
 {
@@ -29,9 +30,11 @@ ScopedCaller::ScopedCaller(ScopedCaller &&other): m_func(std::move(other.m_func)
 
 ScopedCaller::~ScopedCaller()
 {
-    if(m_func)
+    auto temp = std::move(m_func);
+
+    if(temp)
     {
-        m_func();
+        temp();
     }
 }
 

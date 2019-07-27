@@ -4,7 +4,7 @@
 
 struct f
 {
-    void operator () [[noreturn]] ()
+    void operator () ()
     {
         std::cout << ":::ScopedCaller\n";
         throw 1;
@@ -17,7 +17,7 @@ int main()
         std::cout << "ScopedCaller c-tor...\n";
         f fff;
         ScopedCaller sc(fff);
-        std::cout << "ScopedCaller release():\n";
+        std::cout << "ScopedCaller reset():\n";
         try
         {
             sc.reset([](){std::cout << ":::new ScopedCaller\n";});
