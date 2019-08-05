@@ -4,6 +4,7 @@
 
 ThreadPool::ThreadPool(size_t nNumOfThreads /* = std::thread::hardware_concurrency()*/)
 {
+	m_nNumOfActThreads.store(0);
     size_t nCores = std::thread::hardware_concurrency();
 
     if(!nNumOfThreads || (nNumOfThreads > nCores && nCores))
@@ -24,7 +25,6 @@ ThreadPool::ThreadPool(size_t nNumOfThreads /* = std::thread::hardware_concurren
 
 ThreadPool::~ThreadPool()
 {
-    std::cout << "Destructor calls...\n";
     std::unique_lock<std::mutex> lock(m_Mutex);
     m_fCarryOnWork = false;
     lock.unlock();
@@ -34,16 +34,16 @@ ThreadPool::~ThreadPool()
     {
         thread.join();
     }
-    std::cout << "...destruction finished\n";
 }
 
 void ThreadPool::loopFunc(size_t nThreadId)
 {
-    std::unique_lock<std::mutex> lock(m_Mutex);
+    std::unique_lock<std::mutex> lock(m_Mutex, std::defer_lock);
     std::packaged_task<void()> task;
 
     while(true)
     {
+		lock.lock();
         m_CondVar.wait(lock, [this]
         {
             return !m_Tasks.empty() || !m_fCarryOnWork;
@@ -56,17 +56,26 @@ void ThreadPool::loopFunc(size_t nThreadId)
 
         task = std::move(m_Tasks.front());
         m_Tasks.pop();
-        std::cout << "The thread #" << nThreadId << " get next task. Quantity of the active threads = "
-                  << ++m_nNumOfActThreads << "\n";
+
         lock.unlock();
+		{
+			std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
+			std::cout << "The thread #" << nThreadId << " get next task. Quantity of the active threads = "
+					  << ++m_nNumOfActThreads << "\n";
+		}
         task();
-        lock.lock();
-        std::cout << "The thread #" << nThreadId << " finished its task. Quantity of the active threads = "
-                  << --m_nNumOfActThreads << "\n";
+        
+		{
+			std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
+			std::cout << "The thread #" << nThreadId << " finished its task. Quantity of the active threads = "
+					  << --m_nNumOfActThreads << "\n";
+		}
         if(!m_nNumOfActThreads && m_Tasks.empty())
         {
+			std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
             std::cout << "\nAll tasks are finished!\n\n";
         }
     }
+	std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
     std::cout << "The thread #" << nThreadId << " finished its work.\n";
 }

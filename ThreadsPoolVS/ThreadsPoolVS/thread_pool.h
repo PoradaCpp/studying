@@ -7,6 +7,7 @@
 #include <future>
 #include <mutex>
 #include <iostream>
+#include <atomic>
 
 class ThreadPool
 {
@@ -21,8 +22,9 @@ private:
     std::queue <std::packaged_task <void()>> m_Tasks;
     std::vector <std::thread> m_Threads;
     std::mutex m_Mutex;
+	std::mutex m_ConsoleMutex;
     std::condition_variable m_CondVar;
-    size_t m_nNumOfActThreads = 0;
+    std::atomic_uint m_nNumOfActThreads;
     bool m_fCarryOnWork = true;
 
 private:
@@ -37,8 +39,11 @@ std::future<R> ThreadPool::addTask(F&& func)
     {
         std::lock_guard<std::mutex> lock(m_Mutex);
         m_Tasks.emplace(std::move(task));
-        std::cout << "New task was added\n";
     }
-    m_CondVar.notify_one();
+	m_CondVar.notify_one();
+	{
+		std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
+		std::cout << "New task was added\n";
+	}
     return retValue;
 }
