@@ -54,7 +54,7 @@ public:
 	inline void Register();
 
 	template<class TInterface, class TImplementation>
-	inline std::unique_ptr <ScopedUnreg<TInterface>> RegisterScoped();
+	inline ScopedUnreg<TInterface> RegisterScoped();
 
 	template<class TInterface>
 	inline void Unregister();
@@ -136,7 +136,7 @@ void InterfaceFactory::Register()
 }
 
 template<class TInterface, class TImplementation>
-std::unique_ptr <InterfaceFactory::ScopedUnreg<TInterface>> InterfaceFactory::RegisterScoped()
+InterfaceFactory::ScopedUnreg<TInterface> InterfaceFactory::RegisterScoped()
 {
 	if (IsRegistered<TInterface>())
 	{
@@ -149,7 +149,7 @@ std::unique_ptr <InterfaceFactory::ScopedUnreg<TInterface>> InterfaceFactory::Re
 	m_ImplsMap.insert(std::make_pair<std::type_index, std::any>(std::type_index(typeid(TInterface)),
 		std::make_any<std::function< std::unique_ptr<TInterface>()>>(func)));	
 
-	return std::make_unique<ScopedUnreg<TInterface>>(Instance());
+	return ScopedUnreg<TInterface>(Instance());
 }
 
 template<class TInterface>
