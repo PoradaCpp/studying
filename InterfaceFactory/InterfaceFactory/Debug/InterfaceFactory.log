@@ -1,0 +1,7 @@
+﻿  main.cpp
+  class any is only available with C++17 or later.
+C:\Users\Workstation\Documents\CPP\InterfaceFactory\InterfaceFactory\main.cpp(7,7): error C2039:  'any': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\iostream(14): message :  see declaration of 'std'
+C:\Users\Workstation\Documents\CPP\InterfaceFactory\InterfaceFactory\main.cpp(7,11): error C2065:  'any': undeclared identifier
+C:\Users\Workstation\Documents\CPP\InterfaceFactory\InterfaceFactory\main.cpp(7,11): error C2146:  syntax error: missing ';' before identifier 'a'
+C:\Users\Workstation\Documents\CPP\InterfaceFactory\InterfaceFactory\main.cpp(7,11): error C2065:  'a': undeclared identifier
