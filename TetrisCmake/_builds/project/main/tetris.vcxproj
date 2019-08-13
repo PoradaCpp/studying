@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{36443691-5DEF-32C1-A1D3-8DBE1A3D4D12}</ProjectGuid>
+    <ProjectGuid>{5536F90B-AD02-30EB-B60A-1D850CAC16AA}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tetris.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tetris</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tetris.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tetris</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tetris.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tetris</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tetris.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tetris</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -105,10 +105,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,13 +116,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\libs\Debug\tetris_game.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\libs\tetris_engine\Debug\tetris_game.lib;..\libs\tetris_obj\Debug\tetris_obj.lib;..\libs\rand_num_gen\Debug\rand_num_gen.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/Debug/tetris.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Workstation/Desktop/TetrisCmake/_builds/bin/Debug/tetris.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/Debug/tetris.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/bin/Debug/tetris.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -131,7 +131,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -161,13 +161,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\libs\Release\tetris_game.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\libs\tetris_engine\Release\tetris_game.lib;..\libs\tetris_obj\Release\tetris_obj.lib;..\libs\rand_num_gen\Release\rand_num_gen.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/Release/tetris.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Workstation/Desktop/TetrisCmake/_builds/bin/Release/tetris.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/Release/tetris.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/bin/Release/tetris.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -176,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -195,10 +195,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,13 +206,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\libs\MinSizeRel\tetris_game.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\libs\tetris_engine\MinSizeRel\tetris_game.lib;..\libs\tetris_obj\MinSizeRel\tetris_obj.lib;..\libs\rand_num_gen\MinSizeRel\rand_num_gen.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/MinSizeRel/tetris.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Workstation/Desktop/TetrisCmake/_builds/bin/MinSizeRel/tetris.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/MinSizeRel/tetris.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/bin/MinSizeRel/tetris.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -239,10 +239,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main;C:\Users\Workstation\Desktop\TetrisCmake\project\main\src;C:\Users\Workstation\Desktop\TetrisCmake\_builds\exports;C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src;C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\exports;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -250,13 +250,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\libs\RelWithDebInfo\tetris_game.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\libs\tetris_engine\RelWithDebInfo\tetris_game.lib;..\libs\tetris_obj\RelWithDebInfo\tetris_obj.lib;..\libs\rand_num_gen\RelWithDebInfo\rand_num_gen.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/RelWithDebInfo/tetris.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Workstation/Desktop/TetrisCmake/_builds/bin/RelWithDebInfo/tetris.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/RelWithDebInfo/tetris.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/bin/RelWithDebInfo/tetris.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -264,10 +264,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Desktop/TetrisCmake -BC:/Users/Workstation/Desktop/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Documents/CPP/TetrisCmake -BC:/Users/Workstation/Documents/CPP/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -275,12 +275,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Desktop/TetrisCmake -BC:/Users/Workstation/Desktop/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Documents/CPP/TetrisCmake -BC:/Users/Workstation/Documents/CPP/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -288,12 +288,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Desktop/TetrisCmake -BC:/Users/Workstation/Desktop/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Documents/CPP/TetrisCmake -BC:/Users/Workstation/Documents/CPP/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -301,12 +301,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Desktop/TetrisCmake -BC:/Users/Workstation/Desktop/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Documents/CPP/TetrisCmake -BC:/Users/Workstation/Documents/CPP/TetrisCmake/_builds --check-stamp-file C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -314,24 +314,36 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Desktop\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main/CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Workstation\Desktop\TetrisCmake\project\main\src\main.cpp" />
+    <ClCompile Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\project\main\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Workstation\Desktop\TetrisCmake\_builds\ZERO_CHECK.vcxproj">
-      <Project>{2A55535F-6798-3FA3-B6DF-E98A8A2073DA}</Project>
+    <ProjectReference Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\ZERO_CHECK.vcxproj">
+      <Project>{2221CCB9-5521-3ED1-8ED5-FD7047BE13FC}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Workstation\Desktop\TetrisCmake\_builds\project\libs\tetris_game.vcxproj">
-      <Project>{6FF5D6F4-0631-339B-914D-C264CA1669A8}</Project>
+    <ProjectReference Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\libs\rand_num_gen\rand_num_gen.vcxproj">
+      <Project>{995A671B-F7C1-34D2-9D7A-6A20250B6077}</Project>
+      <Name>rand_num_gen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\libs\tetris_engine\tetris_game.vcxproj">
+      <Project>{ECC7192D-F52C-323E-B55E-802EEDC29981}</Project>
       <Name>tetris_game</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\libs\tetris_obj\tetris_obj.vcxproj">
+      <Project>{D6C91636-A666-3E5B-8ACA-B2F21AD21F08}</Project>
+      <Name>tetris_obj</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>

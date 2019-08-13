@@ -1,4 +1,6 @@
-C:/Users/Workstation/Desktop/TetrisCmake/_builds/CMakeFiles/ALL_BUILD.dir
-C:/Users/Workstation/Desktop/TetrisCmake/_builds/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/libs/CMakeFiles/tetris_game.dir
-C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/tetris.dir
+C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/CMakeFiles/ALL_BUILD.dir
+C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/rand_num_gen/CMakeFiles/rand_num_gen.dir
+C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_obj/CMakeFiles/tetris_obj.dir
+C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_engine/CMakeFiles/tetris_game.dir
+C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/CMakeFiles/tetris.dir

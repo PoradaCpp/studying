@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/Workstation/Documents/CPP/TetrisCmake/project/libs/rand_num_gen/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/rand_num_gen/CMakeFiles/generate.stamp is up-to-date.
+  random_uint32_t.cpp
+  rand_num_gen.vcxproj -> C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\project\libs\rand_num_gen\Debug\rand_num_gen.lib

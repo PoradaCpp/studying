@@ -1,6 +1,6 @@
-^C:\USERS\WORKSTATION\DESKTOP\TETRISCMAKE\_BUILDS\CMAKEFILES\3FD67259124F439DD954E721E47FC1FE\GENERATE.STAMP.RULE
+^C:\USERS\WORKSTATION\DOCUMENTS\CPP\TETRISCMAKE\_BUILDS\CMAKEFILES\4907BDE96BB608CF4E9D42D0EDD933C9\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Desktop/TetrisCmake -BC:/Users/Workstation/Desktop/TetrisCmake/_builds --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Workstation/Desktop/TetrisCmake/_builds/TetrisCmake.sln
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Workstation/Documents/CPP/TetrisCmake -BC:/Users/Workstation/Documents/CPP/TetrisCmake/_builds --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/TetrisCmake.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

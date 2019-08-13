@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Workstation\Desktop\TetrisCmake\_builds\CMakeFiles\3fd67259124f439dd954e721e47fc1fe\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\CMakeFiles\4907bde96bb608cf4e9d42d0edd933c9\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{B4ACD6E0-4F1B-335D-B633-051962B95F3C}</UniqueIdentifier>
+      <UniqueIdentifier>{077D59F9-4394-322F-ABF9-D6AE2BFA1B85}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

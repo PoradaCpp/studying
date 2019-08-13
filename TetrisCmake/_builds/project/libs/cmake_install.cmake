@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Workstation/Desktop/TetrisCmake/project/libs
+# Install script for directory: C:/Users/Workstation/Documents/CPP/TetrisCmake/project/libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,5 +30,13 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/rand_num_gen/cmake_install.cmake")
+  include("C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_obj/cmake_install.cmake")
+  include("C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_engine/cmake_install.cmake")
+
 endif()
 

@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/CheckCCompilerFlag.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/CheckCSourceCompiles.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/GenerateExportHeader.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.14/Modules/exportheader.cmake.in
+C:/Users/Workstation/Documents/CPP/TetrisCmake/project/libs/tetris_engine/CMakeLists.txt

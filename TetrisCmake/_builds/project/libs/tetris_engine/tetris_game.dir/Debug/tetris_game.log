@@ -1,0 +1,29 @@
+﻿  Building Custom Rule C:/Users/Workstation/Documents/CPP/TetrisCmake/project/libs/tetris_engine/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_engine/CMakeFiles/generate.stamp is up-to-date.
+  tetris.cpp
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(43,28): warning C4251:  'tetris::m_pObject': class 'std::unique_ptr<TetrisObject,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(43,28): warning C4251:         with
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(43,28): warning C4251:         [
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(43,28): warning C4251:             _Ty=TetrisObject
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(43,28): warning C4251:         ]
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include\tetris_object.h(11): message :  see declaration of 'std::unique_ptr<TetrisObject,std::default_delete<_Ty>>'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include\tetris_object.h(11): message :         with
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include\tetris_object.h(11): message :         [
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include\tetris_object.h(11): message :             _Ty=TetrisObject
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_obj\include\tetris_object.h(11): message :         ]
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(44,36): warning C4251:  'tetris::m_rand_6': class 'Random_uint32_t' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\rand_num_gen\include\random_uint32_t.h(9): message :  see declaration of 'Random_uint32_t'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(50,101): warning C4251:  'tetris::m_LastTime': class 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(547): message :  see declaration of 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(51,65): warning C4251:  'tetris::m_TimeNow': class 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(547): message :  see declaration of 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\include\tetris.h(52,51): warning C4251:  'tetris::m_TimeDifference': class 'std::chrono::duration<double,std::ratio<1,1>>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(632): message :  see declaration of 'std::chrono::duration<double,std::ratio<1,1>>'
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\src\tetris.cpp(91,113): warning C4267:  '=': conversion from 'size_t' to 'SHORT', possible loss of data
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\src\tetris.cpp(92,52): warning C4267:  '=': conversion from 'size_t' to 'SHORT', possible loss of data
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\src\tetris.cpp(110,113): warning C4267:  '=': conversion from 'size_t' to 'SHORT', possible loss of data
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\src\tetris.cpp(111,52): warning C4267:  '=': conversion from 'size_t' to 'SHORT', possible loss of data
+C:\Users\Workstation\Documents\CPP\TetrisCmake\project\libs\tetris_engine\src\tetris.cpp(172,1): warning C4996:  'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\conio.h(459): message :  see declaration of 'kbhit'
+     Creating library C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_engine/Debug/tetris_game.lib and object C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/tetris_engine/Debug/tetris_game.exp
+  tetris_game.vcxproj -> C:\Users\Workstation\Documents\CPP\TetrisCmake\_builds\bin\Debug\tetris_game.dll

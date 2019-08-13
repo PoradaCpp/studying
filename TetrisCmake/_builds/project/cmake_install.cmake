@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Workstation/Desktop/TetrisCmake/project
+# Install script for directory: C:/Users/Workstation/Documents/CPP/TetrisCmake/project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/libs/cmake_install.cmake")
-  include("C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/cmake_install.cmake")
+  include("C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/libs/cmake_install.cmake")
+  include("C:/Users/Workstation/Documents/CPP/TetrisCmake/_builds/project/main/cmake_install.cmake")
 
 endif()
 

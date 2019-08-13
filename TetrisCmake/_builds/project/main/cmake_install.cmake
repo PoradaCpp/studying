@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Workstation/Desktop/TetrisCmake/project/main
+# Install script for directory: C:/Users/Workstation/Documents/CPP/TetrisCmake/project/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
