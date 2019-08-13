@@ -1,0 +1,4 @@
+C:/Users/Workstation/Desktop/TetrisCmake/_builds/CMakeFiles/ALL_BUILD.dir
+C:/Users/Workstation/Desktop/TetrisCmake/_builds/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/libs/CMakeFiles/tetris_game.dir
+C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/tetris.dir

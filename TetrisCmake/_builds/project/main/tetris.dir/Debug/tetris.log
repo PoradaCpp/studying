@@ -1,0 +1,34 @@
+﻿  Building Custom Rule C:/Users/Workstation/Desktop/TetrisCmake/project/main/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Workstation/Desktop/TetrisCmake/_builds/project/main/CMakeFiles/generate.stamp is up-to-date.
+  main.cpp
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(38,33): warning C4251:  'TetrisObject::m_pRotationFunc': class 'std::function<std::unique_ptr<TetrisObject,std::default_delete<_Ty>> (void)>' needs to have dll-interface to be used by clients of class 'TetrisObject'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(38,33): warning C4251:         with
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(38,33): warning C4251:         [
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(38,33): warning C4251:             _Ty=TetrisObject
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(38,33): warning C4251:         ]
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(12): message :  see declaration of 'std::function<std::unique_ptr<TetrisObject,std::default_delete<_Ty>> (void)>'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(12): message :         with
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(12): message :         [
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(12): message :             _Ty=TetrisObject
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(12): message :         ]
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\random_uint32_t.h(18,26): warning C4251:  'Random_uint32_t::m_Engine': class 'std::mersenne_twister_engine<unsigned int,32,624,397,31,2567483615,11,4294967295,7,2636928640,15,4022730752,18,1812433253>' needs to have dll-interface to be used by clients of class 'Random_uint32_t'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\random(5053): message :  see declaration of 'std::mersenne_twister_engine<unsigned int,32,624,397,31,2567483615,11,4294967295,7,2636928640,15,4022730752,18,1812433253>'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\random_uint32_t.h(19,43): warning C4251:  'Random_uint32_t::m_Generator': class 'std::function<uint32_t (void)>' needs to have dll-interface to be used by clients of class 'Random_uint32_t'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\random_uint32_t.h(19): message :  see declaration of 'std::function<uint32_t (void)>'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(43,28): warning C4251:  'tetris::m_pObject': class 'std::unique_ptr<TetrisObject,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(43,28): warning C4251:         with
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(43,28): warning C4251:         [
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(43,28): warning C4251:             _Ty=TetrisObject
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(43,28): warning C4251:         ]
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(11): message :  see declaration of 'std::unique_ptr<TetrisObject,std::default_delete<_Ty>>'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(11): message :         with
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(11): message :         [
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(11): message :             _Ty=TetrisObject
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris_object.h(11): message :         ]
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(50,101): warning C4251:  'tetris::m_LastTime': class 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(547): message :  see declaration of 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(51,65): warning C4251:  'tetris::m_TimeNow': class 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(547): message :  see declaration of 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>'
+C:\Users\Workstation\Desktop\TetrisCmake\project\libs\include\tetris.h(52,51): warning C4251:  'tetris::m_TimeDifference': class 'std::chrono::duration<double,std::ratio<1,1>>' needs to have dll-interface to be used by clients of class 'tetris'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(632): message :  see declaration of 'std::chrono::duration<double,std::ratio<1,1>>'
+  tetris.vcxproj -> C:\Users\Workstation\Desktop\TetrisCmake\_builds\bin\Debug\tetris.exe
