@@ -1,68 +1,15 @@
-/****************************************************************************
-**
-** Copyright (C) 2016 The Qt Company Ltd.
-** Contact: https://www.qt.io/licensing/
-**
-** This file is part of the examples of the Qt Toolkit.
-**
-** $QT_BEGIN_LICENSE:BSD$
-** Commercial License Usage
-** Licensees holding valid commercial Qt licenses may use this file in
-** accordance with the commercial license agreement provided with the
-** Software or, alternatively, in accordance with the terms contained in
-** a written agreement between you and The Qt Company. For licensing terms
-** and conditions see https://www.qt.io/terms-conditions. For further
-** information use the contact form at https://www.qt.io/contact-us.
-**
-** BSD License Usage
-** Alternatively, you may use this file under the terms of the BSD license
-** as follows:
-**
-** "Redistribution and use in source and binary forms, with or without
-** modification, are permitted provided that the following conditions are
-** met:
-**   * Redistributions of source code must retain the above copyright
-**     notice, this list of conditions and the following disclaimer.
-**   * Redistributions in binary form must reproduce the above copyright
-**     notice, this list of conditions and the following disclaimer in
-**     the documentation and/or other materials provided with the
-**     distribution.
-**   * Neither the name of The Qt Company Ltd nor the names of its
-**     contributors may be used to endorse or promote products derived
-**     from this software without specific prior written permission.
-**
-**
-** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-** "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-** LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-** A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-** OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-** SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-** LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-** DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-** THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-** (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-** OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
-**
-** $QT_END_LICENSE$
-**
-****************************************************************************/
-
 #include "taskswidget.h"
 #include "adddialog.h"
 
 #include <QtWidgets>
 
-//! [0]
 TasksWidget::TasksWidget(QWidget *parent)
     : QWidget(parent)
     , m_pTableData(new TableModel(this))
     , m_pLayout(new QHBoxLayout(this))
     , m_pProxyModel(new QSortFilterProxyModel(this))
 {}
-//! [0]
 
-//! [2]
 void TasksWidget::showAddEntryDialog()
 {
     AddDialog aDialog;
@@ -72,9 +19,7 @@ void TasksWidget::showAddEntryDialog()
         addEntry(aDialog.name(), aDialog.priority(), aDialog.deadTime());
     }
 }
-//! [2]
 
-//! [3]
 void TasksWidget::addEntry(QString sName, uint32_t priority, QDateTime deadTimeDate)
 {
     if (!m_pTableData->getTasks().contains({ sName, priority, deadTimeDate }))
@@ -103,9 +48,7 @@ void TasksWidget::addEntry(QString sName, uint32_t priority, QDateTime deadTimeD
             tr("The name \"%1\" already exists.").arg(sName));
     }
 }
-//! [3]
 
-//! [4a]
 void TasksWidget::editEntry()
 {
     m_pSelectionModel = m_pTableView->selectionModel();
@@ -131,9 +74,7 @@ void TasksWidget::editEntry()
         QVariant varDeadTime = m_pTableData->data(deadTimeIndex, Qt::DisplayRole);
         deadTime = varDeadTime.toDateTime();
     }
-//! [4a]
 
-//! [4b]
     AddDialog aDialog;
     aDialog.setWindowTitle(tr("Edit a Task"));
     aDialog.editPriority(name, priority);
@@ -156,9 +97,7 @@ void TasksWidget::editEntry()
         }
     }
 }
-//! [4b]
 
-//! [5]
 void TasksWidget::removeEntry()
 {
     m_pSelectionModel = m_pTableView->selectionModel();
@@ -180,8 +119,6 @@ void TasksWidget::removeEntry()
         }
     }
 }
-//! [5]
-//!
 
 void TasksWidget::selectionProc(QModelIndex index)
 {
@@ -219,7 +156,6 @@ void TasksWidget::setStartPauseButtonText(QString text)
     m_pStartPauseButton->setText(text);
 }
 
-//! [1]
 void TasksWidget::setupTabs()
 {
     m_pProxyModel->setSourceModel(m_pTableData);
@@ -247,9 +183,7 @@ void TasksWidget::setupTabs()
 
     m_pLayout->addWidget(m_pTableView);
 }
-//! [1]
 
-//! [7]
 void TasksWidget::readFromFile(const QString &fileName)
 {
     QFile file(fileName);
@@ -293,9 +227,7 @@ void TasksWidget::readFromFile(const QString &fileName)
         }
     }
 }
-//! [7]
 
-//! [6]
 void TasksWidget::writeToFile(const QString &fileName)
 {
     QFile file(fileName);
@@ -308,7 +240,6 @@ void TasksWidget::writeToFile(const QString &fileName)
     QDataStream out(&file);
     out << m_pTableData->getTasks();
 }
-//! [6]
 
 void TasksWidget::addContents(QTableView *pTableView, QPushButton *pFinishTaskButton, QPushButton *pResetTaskButton,
                               QPushButton *pStartPauseButton)

@@ -63,17 +63,27 @@ void ThreadPool::loopFunc(size_t nThreadId)
 			std::cout << "The thread #" << nThreadId << " get next task. Quantity of the active threads = "
 					  << ++m_nNumOfActThreads << "\n";
 		}
-        task();
-        
+        task();        
 		{
 			std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
 			std::cout << "The thread #" << nThreadId << " finished its task. Quantity of the active threads = "
 				<< --m_nNumOfActThreads << "\n";
+		}
 
-			if (!m_nNumOfActThreads && m_Tasks.empty())
+		lock.lock();
+		if (m_Tasks.empty())
+		{
+			lock.unlock();
+
+			if (!m_nNumOfActThreads)
 			{
+				std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
 				std::cout << "\nAll tasks are finished!\n\n";
 			}
+		}
+		else
+		{
+			lock.unlock();
 		}
     }
 	std::lock_guard<std::mutex> console_lock(m_ConsoleMutex);
