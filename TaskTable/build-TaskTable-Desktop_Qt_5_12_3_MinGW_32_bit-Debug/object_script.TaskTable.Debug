@@ -1,0 +1,11 @@
+debug/adddialog.o
+debug/duration.o
+debug/main.o
+debug/mainwindow.o
+debug/tablemodel.o
+debug/task.o
+debug/taskswidget.o
+debug/moc_adddialog.o
+debug/moc_mainwindow.o
+debug/moc_tablemodel.o
+debug/moc_taskswidget.o

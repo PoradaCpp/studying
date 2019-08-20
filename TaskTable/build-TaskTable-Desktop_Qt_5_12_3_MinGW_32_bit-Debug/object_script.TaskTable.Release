@@ -1,0 +1,11 @@
+release/adddialog.o
+release/duration.o
+release/main.o
+release/mainwindow.o
+release/tablemodel.o
+release/task.o
+release/taskswidget.o
+release/moc_adddialog.o
+release/moc_mainwindow.o
+release/moc_tablemodel.o
+release/moc_taskswidget.o
