@@ -13,6 +13,5 @@ if(CMAKE_VERSION VERSION_LESS "3.7.0")
 endif()
 
 set(CMAKE_PREFIX_PATH "C:/Qt/5.12.3/mingw73_32")
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory("project")
