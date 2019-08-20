@@ -22,8 +22,8 @@ public:
     Task();
     Task(QString sName, uint32_t priority, QDateTime nDeadTimeDate = QDateTime());
 
-    friend QDataStream &operator<<(QDataStream &stream, const Task &task);
-    friend QDataStream &operator>>(QDataStream &stream, Task &task);
+    friend DATAMODEL_EXPORT QDataStream &operator<<(QDataStream &stream, const Task &task);
+    friend DATAMODEL_EXPORT QDataStream &operator>>(QDataStream &stream, Task &task);
 
     void setName(QString sName);
     void setState(TaskState state);

@@ -101,7 +101,7 @@ bool Task::operator==(const Task &other) const
     return m_sName == other.m_sName;
 }
 
-QDataStream &operator<<(QDataStream &stream, const Task &task)
+DATAMODEL_EXPORT QDataStream &operator<<(QDataStream &stream, const Task &task)
 {
     return stream << task.m_sName
                   << (Task::TaskState::STARTED == static_cast<Task::TaskState>(task.m_nState)
@@ -111,7 +111,7 @@ QDataStream &operator<<(QDataStream &stream, const Task &task)
                   << task.m_DeadTimeDate << task.m_SpentTime;
 }
 
-QDataStream &operator>>(QDataStream &stream, Task &task)
+DATAMODEL_EXPORT QDataStream &operator>>(QDataStream &stream, Task &task)
 {
     return stream >> task.m_sName >> task.m_nState >> task.m_Priority >> task.m_CreationDate
                   >> task.m_DeadTimeDate >> task.m_SpentTime;

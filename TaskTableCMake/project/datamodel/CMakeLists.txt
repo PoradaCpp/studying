@@ -2,8 +2,6 @@
 
 include(GenerateExportHeader)
 
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
-
 file(GLOB_RECURSE lib_includes "include/*.h")
 file(GLOB_RECURSE lib_sources "src/*.h" "src/*.cpp")
 
